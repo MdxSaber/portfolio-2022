@@ -312,7 +312,13 @@ p {
   flex-direction: column;
 }
 
+.zoomable {
+  transition: transform 0.5s;
+}
 
+.zoomable:hover {
+  transform: scale(1.1); 
+}
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -822,7 +828,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   /* Sidebar on Large Devices */
   .project-aside {
     width: 35%;
-    height: 65vh;
+   min-height: 65vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
