@@ -312,7 +312,13 @@ p {
   flex-direction: column;
 }
 
+.zoomable {
+  transition: transform 0.5s;
+}
 
+.zoomable:hover {
+  transform: scale(1.1); 
+}
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
