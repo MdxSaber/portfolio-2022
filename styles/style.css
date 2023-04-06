@@ -421,6 +421,35 @@ p {
   grid-row: 4 / 5;
 }
 
+.wave-text {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.wave-text span {
+  display: inline-block;
+  position: absolute;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -870,3 +899,4 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {}
+
